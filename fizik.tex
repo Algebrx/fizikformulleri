@@ -1,0 +1,286 @@
+\documentclass[a4paper, 11pt, titlepage]{article}
+\usepackage[a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm]{geometry}
+\title{AYT Fizik Formülleri}
+\author{İsa Cebir}
+\date{24.05.2025}
+\usepackage[utf8]{inputenc}
+\usepackage[turkish]{babel}
+\usepackage{lipsum}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[none]{hyphenat}
+\usepackage[x11names]{xcolor}
+\usepackage{sectsty}
+\definecolor{blue}{HTML}{0099ff}
+\definecolor{grey}{HTML}{737373}
+\sectionfont{\color{blue}}
+\begin{document}
+\pagestyle{fancy}
+\maketitle
+\thispagestyle{empty}
+\fancyhf{} 
+\fancyhead[L]{AYT Fizik Formülleri}
+\fancyfoot[R]{\thepage}
+\fancyhead[R]{İsa Cebir}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
+
+\twocolumn
+
+\tableofcontents
+\newpage
+\twocolumn
+
+\section{Hız-Zaman Denklemi}
+\[
+\vec{v} = \vec{v}_0 + \vec{a} \cdot t
+\]
+\begin{itemize}
+  \item $\vec{v}$ : Son hız
+  \item $\vec{v}_0$ : Başlangıç hızı
+  \item $\vec{a}$ : İvme
+  \item $t$ : Zaman
+\end{itemize}
+
+\section{Konum-Zaman Denklemi}
+\[
+\vec{x} = \vec{x}_0 + \vec{v}_0 \cdot t + \frac{1}{2} \vec{a} \cdot t^2
+\]
+\begin{itemize}
+  \item $\vec{x}$ : Son konum
+  \item $\vec{x}_0$ : Başlangıç konumu
+  \item $\vec{v}_0$ : Başlangıç hızı
+  \item $\vec{a}$ : İvme
+  \item $t$ : Zaman
+\end{itemize}
+
+\section{Zamansız Hız Denklemi}
+\[
+v^2 = v_0^2 + 2a \cdot \Delta x
+\]
+\begin{itemize}
+  \item $v$ : Son hızın büyüklüğü
+  \item $v_0$ : Başlangıç hızının büyüklüğü
+  \item $a$ : İvme
+  \item $\Delta x$ : Yer değiştirme
+\end{itemize}
+
+\section{İş}
+\[
+W = \vec{F} \cdot \vec{d} = F d \cos \theta
+\]
+\begin{itemize}
+  \item $W$ : İş
+  \item $\vec{F}$ : Kuvvet
+  \item $\vec{d}$ : Yer değiştirme
+  \item $\theta$ : Kuvvet ile yer değiştirme arasındaki açı
+\end{itemize}
+
+\section{Güç}
+\[
+P = \frac{W}{t}
+\]
+\begin{itemize}
+  \item $P$ : Güç
+  \item $W$ : Yapılan iş
+  \item $t$ : Zaman
+\end{itemize}
+
+\section{Kinetik Enerji}
+\[
+K = \frac{1}{2} m v^2
+\]
+\begin{itemize}
+  \item $K$ : Kinetik enerji
+  \item $m$ : Kütle
+  \item $v$ : Hız
+\end{itemize}
+
+\section{Potansiyel Enerji}
+\[
+U = m g h
+\]
+\begin{itemize}
+  \item $U$ : Potansiyel enerji
+  \item $m$ : Kütle
+  \item $g$ : Yerçekimi ivmesi
+  \item $h$ : Yükseklik
+\end{itemize}
+
+\section{Yay Potansiyeli}
+\[
+U = \frac{1}{2} k x^2
+\]
+\begin{itemize}
+  \item $U$ : Yayın potansiyel enerjisi
+  \item $k$ : Yay sabiti
+  \item $x$ : Yayın uzama veya sıkışma miktarı
+\end{itemize}
+
+\section{Kuvvet}
+\[
+\vec{F} =m\cdot\vec{a}
+\]
+\begin{itemize}
+\item $\vec{F}$ : Kuvvet
+\item $m$ : Kütle
+\item $\vec{a}$ : İvme
+\end{itemize}
+
+\section{Tork}
+\[
+\vec{\tau} = \vec{d} \times \vec{F}
+\]
+\begin{itemize}
+  \item $\vec{\tau}$ : Tork
+  \item $\vec{d}$ : Denge merkezine olan dik uzaklık
+  \item $\vec{F}$ : Kuvvet
+\end{itemize}
+
+\section{İtme}
+\[
+\vec{I} = \vec{F}_{\mathrm{net}} \times \Delta t
+\]
+\begin{itemize}
+  \item $\vec{I}$ : İtme
+  \item $\vec{F}_{\mathrm{net}}$ : Uygulanan kuvvet
+  \item $\Delta t$: Geçen zaman
+\end{itemize}
+
+
+\section{Çizgisel Momentum}
+\[
+\vec{p} = m \cdot \vec{v}
+\]
+\begin{itemize}
+  \item $\vec{p}$ : Çizgisel momentum
+  \item $m$ : Kütle
+  \item $\vec{v}$ : Hız
+\end{itemize}
+
+\section{Elektriksel Kuvvet}
+\[
+\vec{F} = k \frac{q_1 \cdot q_2}{r^2}
+\]
+\begin{itemize}
+  \item $\vec{F}$ : Elektriksel kuvvet
+  \item $q_1$, $q_2$ : Yükler
+  \item $r$ : Yükler arası uzaklık
+  \item $k$ : Coulomb sabiti
+\end{itemize}
+
+\section{Elektriksel Alan}
+\[
+\vec{E} = \frac{\vec{F}}{q}
+\]
+\begin{itemize}
+  \item $\vec{E}$ : Elektriksel alan
+  \item $\vec{F}$ : Elektriksel kuvvet
+  \item $q$ : Test yükü
+\end{itemize}
+
+\section{Elektriksel Potansiyel Enerji}
+\[
+U = \pm k \frac{q_1 \cdot q_2}{r}
+\]
+\begin{itemize}
+  \item $U$ : Elektriksel potansiyel enerji
+  \item $q_1$, $q_2$ : Yükler
+  \item $r$ : Yükler arası uzaklık
+  \item $k$ : Coulomb sabiti
+\end{itemize}
+
+\section{Elektriksel Potansiyel}
+\[
+V = \pm k \frac{Q}{r}
+\]
+\begin{itemize}
+  \item $V$ : Elektriksel potansiyel
+  \item $Q$ : Noktasal yük
+  \item $r$ : Uzaklık
+  \item $k$ : Coulomb sabiti
+\end{itemize}
+
+\section[P.L.A. Elektriksel Alan]{Paralel Levhalar Arasında \\ Elektriksel Alan}
+\[
+E = \frac{V}{d}
+\]
+\begin{itemize}
+  \item $E$ : Elektriksel alan
+  \item $V$ : Potansiyel farkı
+  \item $d$ : Levhalar arası mesafe
+\end{itemize}
+
+\section[P.L.A. Parçacığa Etki Eden Kuvvet]{Paralel Levhalar Arasında \\Parçacığa Etki Eden Kuvvet}
+\[
+F = q\cdot E
+\]
+\begin{itemize}
+  \item $F$ : Elektriksel kuvvet
+  \item $q$ : Yüklü parçacık
+  \item $E$ : Elektriksel alan
+\end{itemize}
+
+\section[P.L.A. Potansiyel Farkı]{Paralel Levhalar Arasında \\Potansiyel Farkı}
+\[
+V = \pm E \cdot d
+\]
+\begin{itemize}
+  \item $V$ : Potansiyel farkı
+  \item $E$ : Elektriksel alan
+  \item $d$ : Levhalar arası mesafe
+\end{itemize}
+
+\section[P.L.A. Kinetik Enerji Değişimi]{Paralel Levhalar Arasında \\Kinetik Enerji Değişimi}
+\[
+\Delta K = \pm q \Delta V
+\]
+\begin{itemize}
+  \item $\Delta K$ : Kinetik enerji değişimi
+  \item $q$ : Yük
+  \item $\Delta V$ : Potansiyel farkı
+\end{itemize}
+
+\section{Sığaç Kapasite Formülü}
+\[
+C = \frac{\varepsilon A}{d}
+\]
+\begin{itemize}
+  \item $C$ : Kapasitans (sığa)
+  \item $\varepsilon$ : Ortamın elektriksel geçirgenliği
+  \item $A$ : Plaka yüzey alanı
+  \item $d$ : Plaklar arası mesafe
+\end{itemize}
+
+\section{Fotonun Enerjisi}
+\[
+E = h \cdot f = \frac{h c}{\lambda}
+\]
+\begin{itemize}
+  \item $E$ : Fotonun enerjisi
+  \item $h$ : Planck sabiti
+  \item $f$ : Frekans
+  \item $\lambda$ : Dalga boyu
+  \item $c$ : Işık hızı
+\end{itemize}
+
+\section{Fotoelektrik Denklemi}
+\[
+E_g = E_0 + E_{e^-}
+\]
+\begin{itemize}
+  \item $E_g$ : Gelen fotonun enerjisi
+  \item $E_0$ : Metalin eşik enerjisi
+  \item $E_{e^-}$ : Saçılan elektronun kinetik enerjisi
+\end{itemize}
+
+\section{De Broglie Denklemi}
+\[
+\lambda = \frac{h}{P}
+\]
+\begin{itemize}
+  \item $\lambda$ : Parçacığın dalga boyu
+  \item $h$ : Planck sabiti
+  \item $P$ : Momentun
+\end{itemize}
+\end{document}
