@@ -1,8 +1,10 @@
 \documentclass[a4paper, 11pt, titlepage]{article}
+\usepackage{accents}
 \usepackage[a4paper, left=20mm, right=20mm, top=20mm, bottom=20mm]{geometry}
 \title{AYT Fizik Formülleri}
 \author{İsa Cebir}
 \date{24.05.2025}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[turkish]{babel}
 \usepackage{lipsum}
@@ -12,8 +14,10 @@
 \usepackage[x11names]{xcolor}
 \usepackage{sectsty}
 \definecolor{blue}{HTML}{0099ff}
-\definecolor{grey}{HTML}{737373}
-\sectionfont{\color{blue}}
+\definecolor{grey}{HTML}{787878}
+\sectionfont{\color{black}}
+\subsectionfont{\color{black}}
+\color{grey}
 \begin{document}
 \pagestyle{fancy}
 \maketitle
@@ -31,7 +35,19 @@
 \newpage
 \twocolumn
 
-\section{Hız-Zaman Denklemi}
+\section{Hareket}
+\subsection{Nehir Problemi}
+\[
+d = v_s \cdot \sin \alpha \cdot t
+\]
+\begin{itemize}
+  \item $d$: Nehrin genişliği
+  \item $v_s$: Hareketlinin hızı
+  \item $\alpha$: Hareketlinin dikeyle yaptığı açı
+  \item $t$: Zaman
+\end{itemize}
+
+\subsection{Hız-Zaman Denklemi}
 \[
 \vec{v} = \vec{v}_0 + \vec{a} \cdot t
 \]
@@ -42,7 +58,7 @@
   \item $t$ : Zaman
 \end{itemize}
 
-\section{Konum-Zaman Denklemi}
+\subsection{Konum-Zaman Denklemi}
 \[
 \vec{x} = \vec{x}_0 + \vec{v}_0 \cdot t + \frac{1}{2} \vec{a} \cdot t^2
 \]
@@ -54,7 +70,8 @@
   \item $t$ : Zaman
 \end{itemize}
 
-\section{Zamansız Hız Denklemi}
+
+\subsection{Zamansız Hız Denklemi}
 \[
 v^2 = v_0^2 + 2a \cdot \Delta x
 \]
@@ -65,7 +82,18 @@ v^2 = v_0^2 + 2a \cdot \Delta x
   \item $\Delta x$ : Yer değiştirme
 \end{itemize}
 
-\section{İş}
+\subsection[Serbest Düşmede Yer Değiştirme]{Serbest Düşmede Yer \\Değiştirme}
+\[
+h = \frac{1}{2} g t^2
+\]
+\begin{itemize}
+  \item $h$ : Yükseklik
+  \item $g$ : Yerçekimi ivmesi
+  \item $t$ : Zaman
+\end{itemize}
+
+\section{Enerji}
+\subsection{İş}
 \[
 W = \vec{F} \cdot \vec{d} = F d \cos \theta
 \]
@@ -76,7 +104,7 @@ W = \vec{F} \cdot \vec{d} = F d \cos \theta
   \item $\theta$ : Kuvvet ile yer değiştirme arasındaki açı
 \end{itemize}
 
-\section{Güç}
+\subsection{Güç}
 \[
 P = \frac{W}{t}
 \]
@@ -86,7 +114,7 @@ P = \frac{W}{t}
   \item $t$ : Zaman
 \end{itemize}
 
-\section{Kinetik Enerji}
+\subsection{Kinetik Enerji}
 \[
 K = \frac{1}{2} m v^2
 \]
@@ -96,7 +124,7 @@ K = \frac{1}{2} m v^2
   \item $v$ : Hız
 \end{itemize}
 
-\section{Potansiyel Enerji}
+\subsection{Potansiyel Enerji}
 \[
 U = m g h
 \]
@@ -107,7 +135,7 @@ U = m g h
   \item $h$ : Yükseklik
 \end{itemize}
 
-\section{Yay Potansiyeli}
+\subsection{Yay Potansiyeli}
 \[
 U = \frac{1}{2} k x^2
 \]
@@ -117,17 +145,11 @@ U = \frac{1}{2} k x^2
   \item $x$ : Yayın uzama veya sıkışma miktarı
 \end{itemize}
 
-\section{Kuvvet}
-\[
-\vec{F} =m\cdot\vec{a}
-\]
-\begin{itemize}
-\item $\vec{F}$ : Kuvvet
-\item $m$ : Kütle
-\item $\vec{a}$ : İvme
-\end{itemize}
+\section{Tork ve Denge}
 
-\section{Tork}
+
+
+\subsection{Tork}
 \[
 \vec{\tau} = \vec{d} \times \vec{F}
 \]
@@ -137,7 +159,30 @@ U = \frac{1}{2} k x^2
   \item $\vec{F}$ : Kuvvet
 \end{itemize}
 
-\section{İtme}
+\subsection{Kesişen Kuvvet Dengesi}
+\[
+\frac{F_1}{\sin \alpha} = \frac{F_2}{\sin \beta} = \frac{F_3}{\sin \gamma}
+\]
+\begin{itemize}
+  \item $F_1, F_2, F_3$ : Kuvvet büyüklükleri
+  \item $\alpha, \beta, \gamma$ : Kuvvetlerin karşılıklı açıları
+\end{itemize}
+
+
+\subsection[Kütle Merkezinin Koordinatlar]{Kütle Merkezinin \\Koordinatları}
+\[
+x_{\mathrm{cm}} = \frac{m_1 x_1 + m_2 x_2 + \cdots + m_n x_n}{m_1 + m_2 + \cdots + m_n}
+\]
+\[
+y_{\mathrm{cm}} = \frac{m_1 y_1 + m_2 y_2 + \cdots + m_n y_n}{m_1 + m_2 + \cdots + m_n}
+\]
+\begin{itemize}
+  \item $m_i$ : $i$-inci kütle
+  \item $x_i, y_i$ : $i$-inci kütlenin koordinatları
+  \item $x_{\mathrm{cm}}, y_{\mathrm{cm}}$ : Kütle merkezinin koordinatları
+\end{itemize}
+\section{İtme ve Momentum}
+\subsection{İtme}
 \[
 \vec{I} = \vec{F}_{\mathrm{net}} \times \Delta t
 \]
@@ -148,7 +193,8 @@ U = \frac{1}{2} k x^2
 \end{itemize}
 
 
-\section{Çizgisel Momentum}
+
+\subsection{Çizgisel Momentum}
 \[
 \vec{p} = m \cdot \vec{v}
 \]
@@ -157,8 +203,8 @@ U = \frac{1}{2} k x^2
   \item $m$ : Kütle
   \item $\vec{v}$ : Hız
 \end{itemize}
-
-\section{Elektriksel Kuvvet}
+\section{Elektrik}
+\subsection{Elektriksel Kuvvet}
 \[
 \vec{F} = k \frac{q_1 \cdot q_2}{r^2}
 \]
@@ -169,7 +215,7 @@ U = \frac{1}{2} k x^2
   \item $k$ : Coulomb sabiti
 \end{itemize}
 
-\section{Elektriksel Alan}
+\subsection{Elektriksel Alan}
 \[
 \vec{E} = \frac{\vec{F}}{q}
 \]
@@ -179,7 +225,7 @@ U = \frac{1}{2} k x^2
   \item $q$ : Test yükü
 \end{itemize}
 
-\section{Elektriksel Potansiyel Enerji}
+\subsection{Elektriksel Potansiyel Enerji}
 \[
 U = \pm k \frac{q_1 \cdot q_2}{r}
 \]
@@ -190,7 +236,7 @@ U = \pm k \frac{q_1 \cdot q_2}{r}
   \item $k$ : Coulomb sabiti
 \end{itemize}
 
-\section{Elektriksel Potansiyel}
+\subsection{Elektriksel Potansiyel}
 \[
 V = \pm k \frac{Q}{r}
 \]
@@ -201,7 +247,7 @@ V = \pm k \frac{Q}{r}
   \item $k$ : Coulomb sabiti
 \end{itemize}
 
-\section[P.L.A. Elektriksel Alan]{Paralel Levhalar Arasında \\ Elektriksel Alan}
+\subsection[P.L.A. Elektriksel Alan]{Paralel Levhalar Arasında \\ Elektriksel Alan}
 \[
 E = \frac{V}{d}
 \]
@@ -211,7 +257,7 @@ E = \frac{V}{d}
   \item $d$ : Levhalar arası mesafe
 \end{itemize}
 
-\section[P.L.A. Parçacığa Etki Eden Kuvvet]{Paralel Levhalar Arasında \\Parçacığa Etki Eden Kuvvet}
+\subsection[P.L.A. Parçacığa Etki Eden Kuvvet]{Paralel Levhalar Arasında \\Parçacığa Etki Eden Kuvvet}
 \[
 F = q\cdot E
 \]
@@ -221,7 +267,7 @@ F = q\cdot E
   \item $E$ : Elektriksel alan
 \end{itemize}
 
-\section[P.L.A. Potansiyel Farkı]{Paralel Levhalar Arasında \\Potansiyel Farkı}
+\subsection[P.L.A. Potansiyel Farkı]{Paralel Levhalar Arasında \\Potansiyel Farkı}
 \[
 V = \pm E \cdot d
 \]
@@ -231,7 +277,7 @@ V = \pm E \cdot d
   \item $d$ : Levhalar arası mesafe
 \end{itemize}
 
-\section[P.L.A. Kinetik Enerji Değişimi]{Paralel Levhalar Arasında \\Kinetik Enerji Değişimi}
+\subsection[P.L.A. Kinetik Enerji Değişimi]{Paralel Levhalar Arasında \\Kinetik Enerji Değişimi}
 \[
 \Delta K = \pm q \Delta V
 \]
@@ -241,7 +287,9 @@ V = \pm E \cdot d
   \item $\Delta V$ : Potansiyel farkı
 \end{itemize}
 
-\section{Sığaç Kapasite Formülü}
+
+
+\subsection{Sığaç Kapasite Formülü}
 \[
 C = \frac{\varepsilon A}{d}
 \]
@@ -252,7 +300,322 @@ C = \frac{\varepsilon A}{d}
   \item $d$ : Plaklar arası mesafe
 \end{itemize}
 
-\section{Fotonun Enerjisi}
+% --- MANYETİZMA ---
+\section{Manyetizma}
+
+\subsection[Akım Taşıyan Düz Telde Manyetik Alan]{Akım Taşıyan Düz Telin \\Oluşturduğu Manyetik Alan}
+\[
+B = 2K\frac{i}{d}
+\]
+\begin{itemize}
+  \item $B$ : Manyetik alan şiddeti
+  \item $K$ : Manyetik alan sabiti
+  \item $i$ : Telden geçen akım
+  \item $r$ : Tele olan uzaklık
+\end{itemize}
+
+\subsection{Bobin İçindeki Manyetik Alan}
+\[
+B = K \cdot \frac{4\pi Ni}{\ell}
+\]
+\begin{itemize}
+  \item $B$ : Manyetik alan şiddeti
+  \item $K$ : Manyetik alan sabiti
+  \item $i$ : Telden geçen akım
+  \item $\ell$ : Sarım uzunluğu
+  \item $N$ : Sarım sayısı
+\end{itemize}
+\subsection[Tele Etki Eden Manyetik Kuvvet]{Akım Taşıyan Tele Manyetik \\Alanda Etki Eden Kuvvet}
+\[
+F = B \cdot i \cdot L \cdot \sin \theta
+\]
+\begin{itemize}
+  \item $F$ : Manyetik kuvvet
+  \item $i$ : Akım
+  \item $L$ : Telin uzunluğu
+  \item $B$ : Manyetik alan
+  \item $\theta$ : Akım yönü ile manyetik alan arasındaki açı
+\end{itemize}
+
+\subsection[Hareket Eden Yüklü Parçacığa Etki Eden Manyetik Kuvvet]{Manyetik Alan İçinde Hareket \\Eden Yüklü Parçacığa Etki Eden Kuvvet}
+\[
+F = q \cdot v \cdot B \cdot \sin \theta
+\]
+\begin{itemize}
+  \item $F$ : Manyetik kuvvet
+  \item $q$ : Yük
+  \item $v$ : Parçacığın hızı
+  \item $B$ : Manyetik alan
+  \item $\theta$ : Hız vektörü ile manyetik alan arasındaki açı
+\end{itemize}
+
+\subsection[Çekilen Telde İndüksiyon EMK]{Manyetik Alanda Çekilen Telin \\Uçları Arasında Oluşan İndüksiyon \\Elektromotor Kuvveti}
+\[
+\mathcal{E} = B \cdot L \cdot v
+\]
+\begin{itemize}
+  \item $\mathcal{E}$ : İndüksiyon elektromotor kuvveti (emk)
+  \item $B$ : Manyetik alan
+  \item $L$ : Tel uzunluğu
+  \item $v$ : Telin çekilme hızı
+\end{itemize}
+
+\subsection[Döndürülen Telde İndüksiyon EMK]{Manyetik Alanda Döndürülen Bir \\Telin Uçları Arasında Oluşan \\İndüksiyon Elektromotor Kuvveti}
+\[
+\mathcal{E} = \frac{B\omega\ell^2}{2} \qquad \mathcal{E} = \frac{Bv\ell}{2}
+\]
+\begin{itemize}
+  \item $\mathcal{E}$ : İndüksiyon emk
+  \item $N$ : Sarım sayısı
+  \item $B$ : Manyetik alan
+  \item $A$ : Alan
+  \item $\omega$ , $v$ : Açısal veya çizgisel hız
+  \item $t$ : Zaman
+\end{itemize}
+
+\subsection{Manyetik Akı}
+\[
+\Phi = B \cdot A \cdot \cos \theta
+\]
+\begin{itemize}
+  \item $\Phi$ : Manyetik akı
+  \item $B$ : Manyetik alan
+  \item $A$ : Alan
+  \item $\theta$ : Yüzey normali ile manyetik alan arasındaki açı
+\end{itemize}
+
+\subsection{Alternatif Akımda Etkin Değer}
+\[
+I_{\mathrm{etkin}} = \frac{I_{\mathrm{maks}}}{\sqrt{2}}, \quad V_{\mathrm{etkin}} = \frac{V_{\mathrm{maks}}}{\sqrt{2}}
+\]
+\begin{itemize}
+  \item $I_{\mathrm{etkin}}$ : Etkin akım
+  \item $I_{\mathrm{maks}}$ : Maksimum akım
+  \item $V_{\mathrm{etkin}}$ : Etkin gerilim
+  \item $V_{\mathrm{maks}}$ : Maksimum gerilim
+\end{itemize}
+
+\subsection{Bobinin İndüktif Reaktansı}
+\[
+X_L = 2 \pi f L
+\]
+\begin{itemize}
+  \item $X_L$ : Bobinin indüktif reaktansı
+  \item $f$ : Frekans
+  \item $L$ : Bobinin endüktansı
+\end{itemize}
+
+\subsection{Sığacın Kapasitif Reaktansı}
+\[
+X_C = \frac{1}{2 \pi f C}
+\]
+\begin{itemize}
+  \item $X_C$ : Sığacın kapasitif reaktansı
+  \item $f$ : Frekans
+  \item $C$ : Kapasitans
+\end{itemize}
+
+\subsection{Transformatörler}
+\[
+\frac{N_1}{N_2} = \frac{V_1}{V_2} = \frac{i_2}{i_1}
+\]
+\begin{itemize}
+  \item $N_1$, $N_2$ : Primer ve sekonder sarım sayıları
+  \item $V_1$, $V_2$ : Primer ve sekonder gerilimler
+  \item $i_1$, $i_2$ : Primer ve sekonder akımlar
+\end{itemize}
+\section{Çembersel Hareket}
+\subsection{Açısal Hız}
+\[
+\omega = \frac{\Delta \theta}{\Delta t}
+\]
+\begin{itemize}
+  \item $\omega$ : Açısal hız (rad/s)
+  \item $\Delta \theta$ : Açısal yer değiştirme (radyan)
+  \item $\Delta t$ : Zaman
+\end{itemize}
+
+\subsection{Çizgisel Hız}
+\[
+v = r \cdot \omega
+\]
+\begin{itemize}
+  \item $v$ : Çizgisel hız
+  \item $r$ : Yarıçap
+  \item $\omega$ : Açısal hız
+\end{itemize}
+
+\subsection{Merkezcil İvme}
+\[
+a = \frac{v^2}{r}
+\]
+\begin{itemize}
+  \item $a$ : Merkezcil ivme
+  \item $v$ : Çizgisel hız
+  \item $r$ : Yarıçap
+\end{itemize}
+
+\subsection{Merkezcil Kuvvet}
+\[
+F = \frac{m v^2}{r}
+\]
+\begin{itemize}
+  \item $F$ : Merkezcil kuvvet
+  \item $m$ : Kütle
+  \item $v$ : Çizgisel hız
+  \item $r$ : Yarıçap
+\end{itemize}
+
+\subsection[Minimum Sürtünme Katsayısı]{Minimum Sürtünme \\Katsayısı (Savrulmama)}
+\[
+k_{\mathrm{min}} = \frac{\omega^2 r}{g}
+\]
+\begin{itemize}
+  \item $\mu_{\mathrm{min}}$ : Minimum sürtünme katsayısı
+  \item $v$ : Açısal hız
+  \item $r$ : Dönme yarıçapı
+  \item $g$ : Yerçekimi ivmesi
+\end{itemize}
+
+\subsection{Minimum Açısal Hız}
+\[
+\omega_{\mathrm{min}} = \sqrt{\frac{k g}{r}}
+\]
+\begin{itemize}
+  \item $\omega_{\mathrm{min}}$ : Minimum açısal hız
+  \item $k$ : Sürtünme katsayısı
+  \item $g$ : Yerçekimi ivmesi
+  \item $r$ : Yarıçap
+\end{itemize}
+
+\subsection[Eğimli Virajda Maksimum Hız]{Eğimli Virajda Maksimum \\ Hız}
+\[
+v_{\mathrm{max}} = \sqrt{g r \tan \alpha}
+\]
+\begin{itemize}
+  \item $v_{\mathrm{max}}$ : Maksimum hız
+  \item $g$ : Yerçekimi ivmesi
+  \item $r$ : Yarıçap
+  \item $\alpha$ : Eğim açısı
+\end{itemize}
+
+\subsection{Açısal Momentum}
+\[
+L = m \cdot v \cdot r
+\]
+\begin{itemize}
+  \item $L$ : Açısal momentum
+  \item $m$ : Kütle
+  \item $v$ : Hız
+  \item $r$ : Yarıçap
+\end{itemize}
+
+
+\subsection{Eylemsizlik Momenti}
+\[
+I = m \cdot r^2
+\]
+\begin{itemize}
+  \item $I$ : Eylemsizlik momenti
+  \item $m$ : Kütle
+  \item $r$ : Yarıçap
+\end{itemize}
+\section[Kütle Çekimi ve Kepler Kanunları]{Kütle Çekimi ve Kepler \\Kanunları}
+\subsection{Kütle Çekim Kuvveti}
+\[
+F = G \frac{m_1 \cdot m_2}{r^2}
+\]
+\begin{itemize}
+  \item $F$ : Kütleler arasındaki çekim kuvveti
+  \item $G$ : Evrensel çekim sabiti
+  \item $m_1, m_2$ : Kütleler
+  \item $r$ : Kütleler arası uzaklık
+\end{itemize}
+
+\subsection{Periyotlar Kanunu}
+\[
+\frac{r^3}{T^2} = \mathrm{Sabit}
+\]
+\begin{itemize}
+  \item $r$ : Yörüngenin yarıçapı
+  \item $T$ : Dolanım periyodu
+\end{itemize}
+
+
+\subsection{Yerçekimi İvmesi}
+\[
+g = G \frac{M}{r^2}
+\]
+\begin{itemize}
+  \item $g$ : Yerçekimi ivmesi
+  \item $G$ : Evrensel çekim sabiti
+  \item $M$ : Dünya'nın (ya da gökcisminin) kütlesi
+  \item $r$ : Merkezden olan uzaklık
+\end{itemize}
+ \section{Basit Harmonik Hareket}
+ \subsection[Hızın Uzanıma Bağlı Değişimi]{Hızın Uzanıma Bağlı \\Değişimi}
+ \[
+ v = \omega \sqrt{R^2 - x^2}
+ \]
+ \begin{itemize}
+   \item $v$ : Anlık hız
+   \item $\omega$ : Açısal frekans
+   \item $R$ : Maksimum genlik (uzanım)
+   \item $x$ : Anlık uzanım
+ \end{itemize}
+
+\subsection{İvmenin Uzanıma Bağlı Değişimi}
+\[
+a = -\omega^2 x
+\]
+\begin{itemize}
+  \item $a$ : Anlık ivme
+  \item $\omega$ : Açısal frekans
+  \item $x$ : Anlık uzanım
+\end{itemize}
+
+\subsection{Maksimum Hız}
+\[
+v_{\mathrm{max}} = \omega R
+\]
+\begin{itemize}
+  \item $v_{\mathrm{max}}$ : Maksimum hız
+  \item $\omega$ : Açısal frekans
+  \item $R$ : Genlik
+\end{itemize}
+
+\subsection{Maksimum İvme}
+\[
+a_{\mathrm{max}} = \omega^2 R
+\]
+\begin{itemize}
+  \item $a_{\mathrm{max}}$ : Maksimum ivme
+  \item $\omega$ : Açısal frekans
+  \item $R$ : Genlik
+\end{itemize}
+
+\subsection{Basit Sarkaçta Periyot}
+\[
+T = 2\pi \sqrt{\frac{L}{g}}
+\]
+\begin{itemize}
+  \item $T$ : Periyot
+  \item $L$ : Sarkaç uzunluğu
+  \item $g$ : Yerçekimi ivmesi
+\end{itemize}
+
+
+\subsection{Yaylı Sarkaçta Periyot}
+\[
+T = 2\pi \sqrt{\frac{m}{k}}
+\]
+\begin{itemize}
+  \item $T$ : Periyot
+  \item $m$ : Kütle
+  \item $k$ : Yay sabiti
+\end{itemize}
+\section{Modern Fizik}
+\subsection{Fotonun Enerjisi}
 \[
 E = h \cdot f = \frac{h c}{\lambda}
 \]
@@ -264,7 +627,7 @@ E = h \cdot f = \frac{h c}{\lambda}
   \item $c$ : Işık hızı
 \end{itemize}
 
-\section{Fotoelektrik Denklemi}
+\subsection{Fotoelektrik Denklemi}
 \[
 E_g = E_0 + E_{e^-}
 \]
@@ -274,13 +637,19 @@ E_g = E_0 + E_{e^-}
   \item $E_{e^-}$ : Saçılan elektronun kinetik enerjisi
 \end{itemize}
 
-\section{De Broglie Denklemi}
+\subsection{De Broglie Denklemi}
 \[
 \lambda = \frac{h}{P}
 \]
 \begin{itemize}
   \item $\lambda$ : Parçacığın dalga boyu
   \item $h$ : Planck sabiti
-  \item $P$ : Momentun
+  \item $P$ : Momentum
 \end{itemize}
 \end{document}
+
+
+
+
+
+%5.6
