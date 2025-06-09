@@ -36,16 +36,6 @@
 \twocolumn
 
 \section{Hareket}
-\subsection{Nehir Problemi}
-\[
-d = v_s \cdot \sin \alpha \cdot t
-\]
-\begin{itemize}
-  \item $d$: Nehrin genişliği
-  \item $v_s$: Hareketlinin hızı
-  \item $\alpha$: Hareketlinin dikeyle yaptığı açı
-  \item $t$: Zaman
-\end{itemize}
 
 \subsection{Hız-Zaman Denklemi}
 \[
@@ -196,24 +186,14 @@ y_{\mathrm{cm}} = \frac{m_1 y_1 + m_2 y_2 + \cdots + m_n y_n}{m_1 + m_2 + \cdots
 
 \subsection{Çizgisel Momentum}
 \[
-\vec{p} = m \cdot \vec{v}
+\vec{P} = m \cdot \vec{v}
 \]
 \begin{itemize}
-  \item $\vec{p}$ : Çizgisel momentum
+  \item $\vec{P}$ : Çizgisel momentum
   \item $m$ : Kütle
   \item $\vec{v}$ : Hız
 \end{itemize}
 \section{Elektrik}
-\subsection{Elektriksel Kuvvet}
-\[
-\vec{F} = k \frac{q_1 \cdot q_2}{r^2}
-\]
-\begin{itemize}
-  \item $\vec{F}$ : Elektriksel kuvvet
-  \item $q_1$, $q_2$ : Yükler
-  \item $r$ : Yükler arası uzaklık
-  \item $k$ : Coulomb sabiti
-\end{itemize}
 
 \subsection{Elektriksel Alan}
 \[
@@ -223,6 +203,18 @@ y_{\mathrm{cm}} = \frac{m_1 y_1 + m_2 y_2 + \cdots + m_n y_n}{m_1 + m_2 + \cdots
   \item $\vec{E}$ : Elektriksel alan
   \item $\vec{F}$ : Elektriksel kuvvet
   \item $q$ : Test yükü
+\end{itemize}
+
+
+\subsection{Elektriksel Kuvvet}
+\[
+\vec{F} = k \frac{q_1 \cdot q_2}{r^2}
+\]
+\begin{itemize}
+  \item $\vec{F}$ : Elektriksel kuvvet
+  \item $q_1$, $q_2$ : Yükler
+  \item $r$ : Yükler arası uzaklık
+  \item $k$ : Coulomb sabiti
 \end{itemize}
 
 \subsection{Elektriksel Potansiyel Enerji}
@@ -238,11 +230,11 @@ U = \pm k \frac{q_1 \cdot q_2}{r}
 
 \subsection{Elektriksel Potansiyel}
 \[
-V = \pm k \frac{Q}{r}
+V = \pm k \frac{q}{r}
 \]
 \begin{itemize}
   \item $V$ : Elektriksel potansiyel
-  \item $Q$ : Noktasal yük
+  \item $q$ : Noktasal yük
   \item $r$ : Uzaklık
   \item $k$ : Coulomb sabiti
 \end{itemize}
@@ -259,21 +251,12 @@ E = \frac{V}{d}
 
 \subsection[P.L.A. Parçacığa Etki Eden Kuvvet]{Paralel Levhalar Arasında \\Parçacığa Etki Eden Kuvvet}
 \[
-F = q\cdot E
+F = q\cdot \frac{V}{d}
 \]
 \begin{itemize}
   \item $F$ : Elektriksel kuvvet
   \item $q$ : Yüklü parçacık
-  \item $E$ : Elektriksel alan
-\end{itemize}
-
-\subsection[P.L.A. Potansiyel Farkı]{Paralel Levhalar Arasında \\Potansiyel Farkı}
-\[
-V = \pm E \cdot d
-\]
-\begin{itemize}
-  \item $V$ : Potansiyel farkı
-  \item $E$ : Elektriksel alan
+  \item $V$ : Potansiyel fark
   \item $d$ : Levhalar arası mesafe
 \end{itemize}
 
@@ -287,11 +270,19 @@ V = \pm E \cdot d
   \item $\Delta V$ : Potansiyel farkı
 \end{itemize}
 
-
+\subsection[Yük-Gerilim Bağıntısı]{Kondansatörlerde Yük-Gerilim \\Bağıntısı}
+\[
+q = C \cdot V
+\]
+\begin{itemize}
+  \item $q$ : Yük
+  \item $C$ : Kapasitans (sığa)
+  \item $V$ : Gerilim (potansiyel farkı)
+\end{itemize}
 
 \subsection{Sığaç Kapasite Formülü}
 \[
-C = \frac{\varepsilon A}{d}
+C = \varepsilon \frac{A}{d}
 \]
 \begin{itemize}
   \item $C$ : Kapasitans (sığa)
@@ -300,7 +291,7 @@ C = \frac{\varepsilon A}{d}
   \item $d$ : Plaklar arası mesafe
 \end{itemize}
 
-% --- MANYETİZMA ---
+
 \section{Manyetizma}
 
 \subsection[Akım Taşıyan Düz Telde Manyetik Alan]{Akım Taşıyan Düz Telin \\Oluşturduğu Manyetik Alan}
@@ -427,31 +418,31 @@ X_C = \frac{1}{2 \pi f C}
 \section{Çembersel Hareket}
 \subsection{Açısal Hız}
 \[
-\omega = \frac{\Delta \theta}{\Delta t}
+\omega = 2 \pi f
 \]
 \begin{itemize}
-  \item $\omega$ : Açısal hız (rad/s)
-  \item $\Delta \theta$ : Açısal yer değiştirme (radyan)
-  \item $\Delta t$ : Zaman
+  \item $\omega$ : Açısal hız 
+  \item $f$ : Frekans
 \end{itemize}
 
 \subsection{Çizgisel Hız}
 \[
-v = r \cdot \omega
+v = 2 \pi f r
 \]
 \begin{itemize}
   \item $v$ : Çizgisel hız
   \item $r$ : Yarıçap
-  \item $\omega$ : Açısal hız
+  \item $f$ : Frekans
 \end{itemize}
 
 \subsection{Merkezcil İvme}
 \[
-a = \frac{v^2}{r}
+a = \frac{v^2}{r} \qquad a = \omega^2 \cdot r
 \]
 \begin{itemize}
   \item $a$ : Merkezcil ivme
   \item $v$ : Çizgisel hız
+  \item $\omega$ : Açılsal hız
   \item $r$ : Yarıçap
 \end{itemize}
 
@@ -477,7 +468,7 @@ k_{\mathrm{min}} = \frac{\omega^2 r}{g}
   \item $g$ : Yerçekimi ivmesi
 \end{itemize}
 
-\subsection{Minimum Açısal Hız}
+\subsection[Minimum  Açılsal Hız]{Minimum Açısal Hız \\(Savrulmama)}
 \[
 \omega_{\mathrm{min}} = \sqrt{\frac{k g}{r}}
 \]
@@ -544,12 +535,12 @@ F = G \frac{m_1 \cdot m_2}{r^2}
 
 \subsection{Yerçekimi İvmesi}
 \[
-g = G \frac{M}{r^2}
+g = G \frac{m}{r^2}
 \]
 \begin{itemize}
   \item $g$ : Yerçekimi ivmesi
   \item $G$ : Evrensel çekim sabiti
-  \item $M$ : Dünya'nın (ya da gökcisminin) kütlesi
+  \item $m$ : Dünya'nın (ya da gökcisminin) kütlesi
   \item $r$ : Merkezden olan uzaklık
 \end{itemize}
  \section{Basit Harmonik Hareket}
